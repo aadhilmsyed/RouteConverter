@@ -1,0 +1,83 @@
+<html>
+
+<head>
+
+  <title>FMC Route Generator</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <h1>FMC Route Converter</h1>
+  <h3>Google MyMaps CSV to GeoFS FMC</h3>
+  <h5><i>by GeoFS Flights Channel</i></h5>
+
+  <p class="line">------------------------------</p>
+
+  <p class="introduction">
+    This program converts a CSV file from Google
+    MyMaps into a FMC route that can be inserted into the GeoFS FMC.
+  </p>
+
+  <p class="line">------------------------------</p>
+
+  <h4> <u>INSTRUCTIONS</u> </h4>
+
+  <p class="instructions">
+    For this program to work, make sure you are exporting only a single layer from the MyMap, and make sure that the
+    layer contains only waypoints / markers. Any lines that are a part of the layer will likely cause the program to
+    crash. Visit my <a href="https://www.youtube.com/watch?v=Yf9DV-8O4OA">tutorial video</a> for more help!
+  </p>
+
+
+  <p class="line">------------------------------</p>
+
+  <p class="conclusion">
+    I hope you find this program helpful! :)
+  </p>
+
+  <form id="flightForm">
+
+    <label for="csvFile">CSV File:</label>
+    <input type="file" id="csvFile" accept=".csv" required><br><br>
+
+    <label for="departureAirport">Departure Airport ICAO (Example: OMDB):</label>
+    <input type="text" id="departureAirport" required><br><br>
+
+    <label for="arrivalAirport">Arrival Airport ICAO (Example: KSFO):</label>
+    <input type="text" id="arrivalAirport" required><br><br>
+
+    <label for="flightNumber">Flight Number (Example: UAE225):</label>
+    <input type="text" id="flightNumber" required><br><br>
+
+    <button type="submit">Generate FMC Route</button>
+
+  </form>
+
+  <script src="script.js"></script>
+
+  <form id="outputBox">
+
+    <label for="flightRoute">GeoFS FMC Route</label>
+    <div id="output"></div>
+
+  </form>
+
+  <p><br><br></p>
+
+
+
+  <footer>
+    <p>
+      &copy; 2023 GeoFS Flights Channel. All rights reserved. <br>
+      This program may only be used for its intended purpose and no parts may be redistributed in any
+      form. <br><br>
+      For any inquiries, please contact the._.pickle on Discord.
+    </p>
+  </footer>
+
+</body>
+
+</html>

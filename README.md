@@ -36,7 +36,7 @@ To use the FMC Route Generator, follow these steps:
 
 ## Try It Out
 
-You can try out this program online on Replit! Simply visit the following link: [FMC Route Generator on Replit](https://fmcroutegenerator--geofs-flights-c.repl.co/).
+You can try out this program by visiting the following link: [FMC Route Generator](https://fmcroutegenerator--geofs-flights-c.repl.co/).
 
 ## Contact
 
